@@ -1,0 +1,6 @@
+#!/bin/bash
+source ~/.config/i3blocks/colors
+
+cpu=`~/.config/i3blocks/i3blocks-contrib/cpu_usage/cpu_usage2`
+
+echo "<span color='$weatherBackgroundColor' bgcolor='$cpuBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$cpuTextColor' bgcolor='$cpuBackgroundColor' bgalpha='$alpha'> CPU $cpu </span>"

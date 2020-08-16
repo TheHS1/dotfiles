@@ -1,0 +1,9 @@
+#!/bin/bash
+source ~/.config/i3blocks/colors
+
+var=`~/.config/i3blocks/i3blocks-contrib/volume-pulseaudio/volume-pulseaudio2`
+string="${var//  /}"
+#printf '%s\n' "${string%"${string#?}"} ${string#?}"
+#echo $var2
+
+echo "<span color='$backlightBackgroundColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$volumeTextColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha'> $string</span>"

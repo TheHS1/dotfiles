@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source ~/.config/i3blocks/colors
+
+TIME=$(date +%I:%M%p)
+
+echo "<span color='$dateBackgroundColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$timeTextColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha'>  $TIME </span>"

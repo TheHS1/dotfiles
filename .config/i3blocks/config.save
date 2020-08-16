@@ -1,0 +1,66 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+# Guess the weather hourly
+[weather]
+command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval=300
+label=  
+color=#A4C2F4
+
+[cpu_usage]
+command=~/.config/i3blocks/i3blocks-contrib/cpu_usage/cpu_usage
+interval=10
+LABEL=CPU 
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
+
+[memory]
+command=~/.config/i3blocks/i3blocks-contrib/memory/memory
+label=MEM 
+interval=10
+
+
+[Date]
+command=date '+%Y %b %d (%a)'
+label=  
+interval=1
+color=#FFA500	
+
+[time]
+command=date '+%I:%M%p'
+label=  
+interval=1
+LONG_FORMAT="${SYMB} ${VOL}%
+
+[backlight]
+command=~/.config/i3blocks/i3blocks-contrib/backlight/backlight
+label=☀
+interval=1
+#STEP_SIZE=5
+#USE_SUDO=0
+color=#FFFF00
+
+[volume-pulseaudio]
+command=~/.config/i3blocks/i3blocks-contrib/volume-pulseaudio/volume-pulseaudio
+interval=once
+signal=1
+
+[battery2]
+command=~/.config/i3blocks/i3blocks-contrib/battery2/battery2
+markup=pango
+interval=30
+color=#00FF00
+
+	

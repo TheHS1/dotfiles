@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+#Transparency value
+alpha="50%"
+
+#weather block colors
+weatherBackgroundColor="black"
+weatherTextColor="white"
+
+#cpu block colors
+cpuBackgroundColor="teal"
+cpuTextColor="white"
+
+#memory block colors
+memoryBackgroundColor="#7fa6b0"
+memoryTextColor="white"
+
+#date block colors
+dateBackgroundColor="#2776ba"
+dateTextColor="white"
+
+#time block colors
+timeBackgroundColor="#441961"
+timeTextColor="white"
+
+#backlight block colors
+backlightBackgroundColor="#6571a8"
+backlightTextColor="white"
+
+#volume block colors
+volumeBackgroundColor="#113540"
+volumeTextColor="white"
+
+#battery block colors
+batteryBackgroundColor="#4a524d"
+batteryTextColor="#1bde58"

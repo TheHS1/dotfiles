@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source ~/.config/i3blocks/colors
+
+DATE=$(date '+%Y %b %d (%a)')
+
+echo "<span color='$memoryBackgroundColor' bgcolor='$dateBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$dateTextColor' bgcolor='$dateBackgroundColor' bgalpha='$alpha'>  $DATE </span>"

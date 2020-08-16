@@ -1,0 +1,5 @@
+#!/bin/bash
+source ~/.config/i3blocks/colors
+
+weather=`python3 ~/.config/i3blocks/i3blocks-contrib/weather/accuweather.py` || weather=`curl wttr.in/SanJose?format="+%w+%o+%c+%t\n"` 
+echo "<span color='$weatherBackgroundColor' bgcolor='$weatherBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$weatherTextColor' bgcolor='$weatherBackgroundColor' bgalpha='$alpha'> $weather </span>"
