@@ -6,4 +6,4 @@ string="${var//  /}"
 #printf '%s\n' "${string%"${string#?}"} ${string#?}"
 #echo $var2
 
-echo "<span color='$backlightBackgroundColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$volumeTextColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha'> $string</span>"
+echo "<span color='$backlightBackgroundColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$volumeTextColor' bgcolor='$volumeBackgroundColor' bgalpha='$alpha' font_desc='$fontDesc'> $string</span>"

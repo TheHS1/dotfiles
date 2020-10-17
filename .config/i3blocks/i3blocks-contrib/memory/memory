@@ -3,4 +3,4 @@ source ~/.config/i3blocks/colors
 
 var=`~/.config/i3blocks/i3blocks-contrib/memory/memory2`
 
-echo "<span color='$cpuBackgroundColor' bgcolor='$memoryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$memoryTextColor' bgcolor='$memoryBackgroundColor' bgalpha='$alpha'> MEM $var </span>"
+echo "<span color='$cpuBackgroundColor' bgcolor='$memoryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$memoryTextColor' bgcolor='$memoryBackgroundColor' bgalpha='$alpha' font_desc='$fontDesc'> MEM $(echo $var | cut -d " " -f1) </span>"

@@ -2,4 +2,4 @@
 source ~/.config/i3blocks/colors
 var=`python3 ~/.config/i3blocks/i3blocks-contrib/battery2/battery`
 
-echo "<span color='$volumeBackgroundColor' bgcolor='$batteryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha'></span><span color='$batteryTextColor' bgcolor='$batteryBackgroundColor' bgalpha='$alpha'> $var </span><span color='$batteryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span>"
+echo "<span color='$volumeBackgroundColor' bgcolor='$batteryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha'></span><span color='$batteryTextColor' bgcolor='$batteryBackgroundColor' bgalpha='$alpha' font_desc='$fontDesc'> $var </span><span color='$batteryBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span>"

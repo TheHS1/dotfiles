@@ -7,6 +7,7 @@ countryCode=""
 city=""
 postalCode=""
 key=""
+symbol=""
 def getLocation(countryCode,city):
     #search_address="http://dataservice.accuweather.com/locations/v1/cities/"+countryCode+"/search?apikey="+API+"&q="+city+"&details=true"
     search_address="http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey="+API+"&q="+postalCode+"&details=true"
@@ -24,7 +25,11 @@ def getForcast(location_key):
     with urllib.request.urlopen(daily_forcastURL) as daily_forcastURL:
         data=json.loads(daily_forcastURL.read().decode())
         x = data[0]
-        print(str(x['Wind']['Speed']['Value']) + "mph ⛅️ " +str(x['Temperature']['Value']) + "°F")
+        if str(x['IconPhrase']) == "Partly sunny":
+            symbol = "⛅️"
+        else:
+            symbol="⛅️"
+        print(str(x['Wind']['Speed']['Value']) + "mph " +symbol+ " " +str(x['Temperature']['Value']) + "°F")
         
 key=getLocation(countryCode,city)    
 getForcast(key)

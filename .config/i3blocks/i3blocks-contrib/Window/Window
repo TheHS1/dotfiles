@@ -1,0 +1,11 @@
+#/bin/sh
+name=$(xprop -id $(xdotool getactivewindow) | grep 'WM_CLASS(STRING)' | cut -d'"' -f2)
+echo "${name^}  "
+
+
+#if [ $(echo -n $(xtitle) | wc -c) -lt 33 ]; then
+#	echo "$(xtitle)  "
+#else
+#        echo "$(xtitle | cut -c1-33)...  "
+#fi
+

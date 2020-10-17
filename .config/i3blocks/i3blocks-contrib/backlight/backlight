@@ -33,5 +33,5 @@ esac
 
 BRIGHTNESS=$(light)
 #echo "${BRIGHTNESS}%"
-echo "<span color='$timeBackgroundColor' bgcolor='$backlightBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$backlightTextColor' bgcolor='$backlightBackgroundColor' bgalpha='$alpha'> ☀$BRIGHTNESS </span>"
+echo "<span color='$timeBackgroundColor' bgcolor='$backlightBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$backlightTextColor' bgcolor='$backlightBackgroundColor' bgalpha='$alpha' font_desc='$fontDesc'> ☀$BRIGHTNESS </span>"
 #echo -e "<span background='#000000' foreground='#FFFFFF'> Hello </span><span background="#FFFFFF" foreground="#000000"> World </span>"

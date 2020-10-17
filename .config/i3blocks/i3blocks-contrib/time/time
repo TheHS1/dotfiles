@@ -3,4 +3,4 @@ source ~/.config/i3blocks/colors
 
 TIME=$(date +%I:%M%p)
 
-echo "<span color='$dateBackgroundColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$timeTextColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha'>  $TIME </span>"
+echo "<span color='$dateBackgroundColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha' fgalpha='$alpha' ></span><span color='$timeTextColor' bgcolor='$timeBackgroundColor' bgalpha='$alpha' font_desc='$fontDesc'> 🕛 $TIME </span>"

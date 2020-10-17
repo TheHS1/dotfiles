@@ -1,0 +1,12 @@
+STEP_SIZE=${STEP_SIZE:-5}
+USE_SUDO=${USE_SUDO:-0}
+
+# whether to use `sudo` for changing the brightness (requires a NOPASSWD rule)
+case $BLOCK_BUTTON in
+  3) xset dpms force off ;; # right click
+  4) light -A "$STEP_SIZE" ;; # scroll up
+  5) light -U  "$STEP_SIZE" ;; # scroll down, decrease
+esac
+
+BRIGHTNESS=$(light)
+echo ☀ $BRIGHTNESS
