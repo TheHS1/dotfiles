@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+#weather block colors
+weatherIconColor=""
+weatherTextColor="#FFE0C2"
+
+#cpu block colors'
+cpuIcon=""
+cpuIconColor="#8873C0"
+cpuTextColor="#FFE0C2"
+
+#memory block colors
+memoryIcon=""
+memoryIconColor="#F0BE59"
+memoryTextColor="#FFE0C2"
+
+#disk block colors
+diskIcon=""
+diskIconColor=""
+diskTextColor=""
+
+#date block colors
+dateIcon=""
+dateIconColor="#DC442C"
+dateTextColor="#FFE0C2"
+
+#time block colors
+timeIcon=""
+timeIconColor="#A8DB7B"
+timeTextColor="#FFE0C2"
+
+#backlight block colors
+backlightIcon="☀"
+backlightIconColor="yellow"
+backlightTextColor="#FFE0C2"
+
+#volume block colors Wouldn't take using this file for config for icon so edit volume-pulseaudio2 script to change color
+volumeTextColor="#FFE0C2"
+
+#battery block colors
+batteryIconColor=""
+batteryTextColor="#FFE0C2"

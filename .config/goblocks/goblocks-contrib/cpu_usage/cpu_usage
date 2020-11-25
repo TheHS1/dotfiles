@@ -1,0 +1,6 @@
+#!/bin/bash
+source ~/.config/goblocks/colors
+
+cpu=`~/.config/goblocks/goblocks-contrib/cpu_usage/cpu_usage2`
+
+echo "<span color='$cpuIconColor'> $cpuIcon</span><span color='$cpuTextColor' font_desc='$fontDesc'> $cpu </span>"

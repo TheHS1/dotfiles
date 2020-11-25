@@ -1,0 +1,43 @@
+{
+	"separator": "|",
+	"actions": 
+	[
+		{
+			"updateSignal": "34",
+			"command": "~/.config/goblocks/goblocks-contrib/cpu_usage/cpu_usage",
+			"timer": "5s"
+		},
+		{
+			"updateSignal": "34",
+			"command": "~/.config/goblocks/goblocks-contrib/memory/memory",
+			"timer": "5s"
+		},
+		{
+			"updateSignal": "34",
+			"command": "~/.config/goblocks/goblocks-contrib/Date/Date",
+			"timer": "1s"
+		},
+		{
+			"updateSignal": "34",
+			"command": "~/.config/goblocks/goblocks-contrib/time/time",
+			"timer": "1s"
+		},
+		{
+			"updateSignal": "35",
+			"command": "~/.config/goblocks/goblocks-contrib/backlight/backlight",
+			"timer": "0s"
+		},
+		{
+			"updateSignal": "36",
+			"command": "~/.config/goblocks/goblocks-contrib/volume-pulseaudio/volume-pulseaudio",
+			"timer": "0s"
+		},
+				{
+			"updateSignal": "34",
+			"command": "~/.config/goblocks/goblocks-contrib/battery2/battery2",
+			"timer": "0s"
+		}
+
+	]
+
+}

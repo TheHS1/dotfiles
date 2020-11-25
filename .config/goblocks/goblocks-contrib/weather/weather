@@ -1,0 +1,5 @@
+#!/bin/bash
+source ~/.config/goblocks/colors
+
+weather=`python3 ~/.config/goblocks/goblocks-contrib/weather/accuweather.py` || weather=`curl wttr.in/SanJose?format="+%w+%o+%c+%t\n"` 
+echo "<span color='$weatherTextColor' font_desc='$fontDesc'>$weather </span>"
