@@ -24,4 +24,6 @@ pulseaudio, alsa (alsa-utils package), fontawesome
 
 ### weather
 
+python libraries: time, urllib.request, json
+
 Uses accuweather with a wttr.in fallback. To use accuweather make an account with accuweather and create an app to get an api key. In dotfiles/.config/i3blocks/i3blocks-contrib/weather/accuweather.py or the goblocks path if using that instead, fill in the variables for the API key, country code, and postal code.
