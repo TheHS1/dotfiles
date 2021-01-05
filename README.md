@@ -2,12 +2,13 @@
 
 ![Desktop Image](https://github.com/TheHS1/dotfiles/blob/master/Pictures/desktop.png?raw=true)
 
+My dotfiles repository
 
-My i3, i3blocks, and goblocks config files and scripts to be placed in ~/.config
+My i3, i3blocks, and goblocks config files and scripts are to be placed in ~/.config
 
-To edit the colors of i3blocks or goblocks edit the colors file in ~/.config/i3blocks or ~/.config/goblocks
+To edit the colors of i3blocks or goblocks edit the colors file in ~/.config/i3blocks or ~/.config/goblocks respectively
 
-# Dependencies
+# Statusbar Dependencies
 
 ### Backlight
 
